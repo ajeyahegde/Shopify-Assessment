@@ -1,0 +1,20 @@
+{
+  "name": "shopify_assessment",
+  "version": "1.0.0",
+  "description": "Shopify Assessment",
+  "main": "inventory.js",
+  "scripts": {
+    "start": "node inventory.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "ejs": "^3.1.6",
+    "excel4node": "^1.7.2",
+    "express": "^4.17.2",
+    "request": "^2.88.2",
+    "save": "^2.4.0"
+  }
+}

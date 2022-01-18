@@ -1,0 +1,92 @@
+<html>
+<head>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: center;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        #table1{
+            border-collapse: collapse;
+            border-color: white;
+            border: 0px;
+        }
+        img{
+            height: 60px;
+            width: 60px;
+        }
+        .button-color {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body style="background-color: blanchedalmond;">
+    <div style="background-color: blanchedalmond;">
+    <h1 style="text-align: center;"><b><img src="http://assets.stickpng.com/images/58482ec0cef1014c0b5e4a70.png"> <i> shopify </i>INVENTORY APPLICATION </b></h1>
+    
+    <table id="table1">
+    <tr>
+    <th>    
+    <form action="/form" method="GET">
+        <button class="button-color" type="submit">CREATE INVENTORY ITEM</button>
+    </form>
+    </th>
+    <th>
+    <form action="/form-update" method="GET">
+        <button class="button-color" type="submit">UPDATE INVENTORY ITEM</button>
+    </form>
+    </th>
+    <th>
+    <form action="/form-delete" method="GET">
+        <button class="button-color"  type="submit">DELETE INVENTORY ITEM</button>
+    </form>
+    </th>
+
+    <th>
+        <form action="/export" method="GET">
+            <button class="button-color"  type="submit">EXPORT TO EXCEL</button>
+        </form>
+        </th>
+    </tr>
+    </table>
+    </div>
+    <div style="background-color: white;">
+    <table>
+        <tr>
+            <th>INVENTORY ID</th>
+            <th>NAME</th>
+            <th>PRICE</th>
+            <th>DESCRIPTION</th>
+            <th>QUANTITY</th>
+        </tr>
+        <% for(var i = 0; i < items.length ; i++) {%>
+            <tr>
+              <td><%= items[i].inventoryId %></td>
+              <td><%= items[i].name %></td>
+              <td><%= items[i].price %></td>
+              <td><%= items[i].desc %></td>
+              <td><%= items[i].quantity %></td>
+            </tr>
+          <% } %>
+    </table>
+    </div>
+</body>
+
+</html>
