@@ -2,6 +2,7 @@
 Shopify Backend Developer Intern  Challenge - Summer 2022
 
 Demo of the Application:
+
 https://user-images.githubusercontent.com/89498859/149862609-5ac8b225-695d-4cb4-8964-c3368232c947.mp4
 
 **Summary:**
